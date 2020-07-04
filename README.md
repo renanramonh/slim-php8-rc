@@ -10,3 +10,26 @@ Slim dependencies are not 100% compatible with php8 then it runs composer instal
 | `make start` | start docker containers |
 | `make stop` | stop docker containers |
 | `make logs` | show logs of containers |
+
+## API
+this service has a **calculate** endpoint that has two inputs.
+
+_endpoint_:
+```curl 
+GET /calculate/{numberA}/{numberB}
+```
+
+_sample call_:
+```curl
+curl -X GET 'http://localhost/calculate/1/2'
+```
+
+_result_:
+```json
+{
+  "sum":3,
+  "multiplication":2,
+  "subtraction":-1,
+  "division":0.5
+}
+```
