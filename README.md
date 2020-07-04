@@ -1,5 +1,5 @@
 # PHP8 RC
-This is a test of the new PHP 8 with [slim framework](http://www.slimframework.com/).
+This is a test of the PHP 8 RC with [slim framework](http://www.slimframework.com/).
 Slim dependencies are not 100% compatible with php8 then it runs composer install on an old php version and copies the files to php8 container
 
 ## Commands
