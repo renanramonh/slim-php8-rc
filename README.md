@@ -6,6 +6,7 @@ Slim dependencies are not 100% compatible with php8 then it runs composer instal
 | Command | Description |
 | --- | --- |
 | `make build` | build docker images |
+| `make init` | build docker images and start docker containers |
 | `make start` | start docker containers |
 | `make stop` | stop docker containers |
 | `make logs` | show logs of containers |
