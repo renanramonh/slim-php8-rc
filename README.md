@@ -24,11 +24,13 @@ Slim dependencies are not 100% compatible with php8 then it runs composer instal
 this service has a **calculate** endpoint that has two inputs.
 
 _endpoint_:
-  GET /calculate/{numberA}/{numberB}
+  
+    GET /calculate/{numberA}/{numberB}
 
 
 _sample call_:
-  curl -X GET 'http://localhost/calculate/1/2'
+  
+    curl -X GET 'http://localhost/calculate/1/2'
 
 _result_:
 ```json
