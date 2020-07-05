@@ -21,7 +21,7 @@ services:
     ports:
       - 80:80
     volumes:
-      - ./app:/var/www/myapp
+      - ./app:/var/www/app
       - ./app/config/default.conf:/etc/nginx/conf.d/default.conf
     depends_on:
       - php
@@ -32,5 +32,5 @@ services:
       context: app
       target: fpm
     volumes:
-      - ./app:/var/www/myapp
+      - ./app:/var/www/app
       - ./app/config/php.ini:/usr/local/etc/php/php.ini

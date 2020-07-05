@@ -6,7 +6,7 @@
     "autoload": {
         "psr-4": {
             "App\\": "src/",
-            "App\\Test\\Unit": "tests/unit"
+            "App\\Test\\Unit\\": "tests/unit"
         }
     },
     "require-dev": {

@@ -3,10 +3,10 @@ COPY . /app
 RUN composer install
 
 FROM php:rc-fpm-alpine AS fpm
-WORKDIR /var/www/myapp
+WORKDIR /var/www/app
 COPY --from=composer /app .
 COPY ./config/php.ini /usr/local/etc/php/php.ini
 
 FROM nginx:1.17 AS nginx
-COPY --from=fpm . /var/www/myapp
+COPY --from=fpm . /var/www/app
 COPY ./config/default.conf /etc/nginx/conf.d/default.conf

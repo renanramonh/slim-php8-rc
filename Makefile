@@ -1,10 +1,11 @@
 build:
 	docker-compose build
+	docker-compose run composer
 	
 init: build start
 
 start:
-	docker-compose up -d
+	docker-compose up -d php nginx
 	
 stop:
 	docker-compose down
