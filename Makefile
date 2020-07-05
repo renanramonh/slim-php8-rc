@@ -8,7 +8,7 @@ start:
 	docker-compose up -d php nginx
 	
 stop:
-	docker-compose down
+	docker-compose stop
 	
 logs:
 	docker-compose logs -f
