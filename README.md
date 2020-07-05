@@ -15,6 +15,8 @@ Slim dependencies are not 100% compatible with php8 then it runs composer instal
 | `make start` | start docker containers |
 | `make stop` | stop docker containers |
 | `make logs` | show logs of containers |
+| `make enter` | enter on php container |
+| `test-units` | run unit tests |
 
 ## API
 this service has a **calculate** endpoint that has two inputs.

@@ -11,3 +11,9 @@ stop:
 	
 logs:
 	docker-compose logs -f
+
+enter:
+	docker-compose exec php sh
+
+test-units:
+	docker-compose exec php ./vendor/bin/phpunit tests
