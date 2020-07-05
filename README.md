@@ -2,6 +2,11 @@
 This is a test of the PHP 8 RC with [slim framework](http://www.slimframework.com/).
 Slim dependencies are not 100% compatible with php8 then it runs composer install on an old php version and copies the files to php8 container
 
+## Requirements
+[Docker](https://docs.docker.com/engine/install/) version >=19.03.8
+
+[Docker Compose](https://docs.docker.com/compose/install/) version>=1.25.4
+
 ## Commands
 | Command | Description |
 | --- | --- |
@@ -15,14 +20,11 @@ Slim dependencies are not 100% compatible with php8 then it runs composer instal
 this service has a **calculate** endpoint that has two inputs.
 
 _endpoint_:
-```curl 
-GET /calculate/{numberA}/{numberB}
-```
+  GET /calculate/{numberA}/{numberB}
+
 
 _sample call_:
-```curl
-curl -X GET 'http://localhost/calculate/1/2'
-```
+  curl -X GET 'http://localhost/calculate/1/2'
 
 _result_:
 ```json
