@@ -3,6 +3,7 @@ COPY . /app
 RUN composer install
 
 FROM php:rc-fpm-alpine AS fpm
+LABEL maintainer="renanramonh@gmail.com"
 WORKDIR /var/www/app
 COPY --from=composer /app .
 COPY ./config/php.ini /usr/local/etc/php/php.ini
